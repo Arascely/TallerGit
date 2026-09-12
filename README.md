@@ -18,95 +18,72 @@ Al finalizar esta práctica, el estudiante estará en capacidad de:
 • Aplicar buenas prácticas en la gestión de ramas, commits, pull requests y resolución de
 conflictos.
 
-### Procesos en Git
- 
+## Procesos en Git
+
+### -Configuración global
+
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1
 $ git config --global user.name "Arascely"
 
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1
 $ git config --global user.email "grissel.rodriguez.27@unsch.edu.pe"
 
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1
-$ git init
-Initialized empty Git repository in C:/Users/LABORATORIO/Documents/TallerLab1/.git/
+#### Inicializar repositorio
 
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ git status
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 
+-$ git init
+Initialized empty Git repository in C:/Users/LABORATORIO/Documents/TallerLab1/.git/-
+
+#### Ver estado
+
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main) 
+-$ git status
 On branch main
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 
+#### Crear carpeta y acceder
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ mkdir GitTaller
+-$ mkdir GitTaller
 
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ cd GitTaller
+-$ cd GitTaller
 
+#### Configurar rama principal por defecto
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git config --global init.defaultBranch main
+-$ git config --global init.defaultBranch main
 
-
+#### Crear archivo README
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ git status
-On branch main
+-$ echo "#ATallerGit" > README.md
 
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        GitTaller/
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ echo "#ATallerGit" > README.md
-
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ git atatus
-git: 'atatus' is not a git command. See 'git --help'.
-
-The most similar command is
-        status
-
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        GitTaller/
-        README.md
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1 (main)
-$ cd GitTaller
+#### Agregar archivos al staging
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$  echo "#ATallerGit" > README.md
-
-LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git add .
+-$ git add .
 warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
 
+#### Primer commit
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git commit -m "primer commit"
+-$ git commit -m "primer commit"
 [main (root-commit) 71ef38c] primer commit
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
 
+#### Agregar repositorio remoto
+
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git remote add origin https://github.com/Arascely/TallerGit.git
+-$ git remote add origin https://github.com/Arascely/TallerGit.git
 error: remote origin already exists.
 
+#### Renombrar rama a main
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git branch -M main
+-$ git branch -M main
 
+#### Subir cambios al remoto
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git push -u origin main
+-$ git push -u origin main
 info: please complete authentication in your browser...
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -116,17 +93,20 @@ To https://github.com/Arascely/TallerGit.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
+#### Ver ramas
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git branch
+-$ git branch
 * main
 
+#### Crear y cambiar a rama cv
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (cv)
-$ git commit -m "Agregar CV"
+-$ git commit -m "Agregar CV"
 On branch cv
 nothing to commit, working tree clean
 
+#### Commit en rama cv (sin cambios pendientes)
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (cv)
-$ git push -u origin cv
+-$ git push -u origin cv
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 remote:
 remote: Create a pull request for 'cv' on GitHub by visiting:
@@ -136,35 +116,42 @@ To https://github.com/Arascely/TallerGit.git
  * [new branch]      cv -> cv
 branch 'cv' set up to track 'origin/cv'.
 
+#### Subir rama cv al remoto
+git push -u origin cv
 
+#### Volver a rama main
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (cv)
-$ git checkout main
+-$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
+#### Ver historial resumido
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git log --oneline
+-$ git log --oneline
 71ef38c (HEAD -> main, origin/main, origin/cv, cv) primer commit
 
+#### Ver historial completo
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git log
+-$ git log
 commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (HEAD -> main, origin/main, origin/cv, cv)
 Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:10:28 2026 -0500
 
     primer commit
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git add README.md
+-$ git add README.md
 warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
 
+#### Actualizar README e index.html
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git commit -m "Actualizacion de archivos"
+-$ git commit -m "Actualizacion de archivos"
 [main cbe8951] Actualizacion de archivos
  2 files changed, 28 insertions(+), 1 deletion(-)
  create mode 100644 index.html
 
+#### Subir cambios a main
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git push origin main
+-$ git push origin main
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
 Delta compression using up to 16 threads
@@ -173,42 +160,11 @@ Writing objects: 100% (4/4), 862 bytes | 862.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/Arascely/TallerGit.git
    71ef38c..cbe8951  main -> main
+#### Ver historial actualizado
 
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
-$ git log
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
+-$ git log
 
-    Actualizacion de archivos
-
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
-
-:
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
-
-    Actualizacion de archivos
-
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
-
-:
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
-
-    Actualizacion de archivos
-
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
-
-:
 commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
 Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:59:04 2026 -0500
@@ -220,85 +176,16 @@ Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:10:28 2026 -0500
 
     primer commit
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
 
-    Actualizacion de archivos
+### Preparando la subida actualizada de archivos
+Grissel RQ@LAPTOP-L0S870L9 MINGW64 ~/Documents/LabArquitectura/TallerGit (main)
+-$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
 
-    primer commit
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
-
-    Actualizacion de archivos
-
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
-
-    primer commit
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:59:04 2026 -0500
-
-    Actualizacion de archivos
-
-commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
-Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
-Date:   Sat Sep 12 10:10:28 2026 -0500
-
-    primer commit
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-
- 
+no changes added to commit (use "git add" and/or "git commit -a")
