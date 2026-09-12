@@ -137,7 +137,7 @@ commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (HEAD -> main, origin/main, orig
 Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:10:28 2026 -0500
 
-    primer commit
+   primer commit
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
 -$ git add README.md
 warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
@@ -168,14 +168,13 @@ LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
 commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
 Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:59:04 2026 -0500
-
     Actualizacion de archivos
 
 commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
 Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:10:28 2026 -0500
 
-    primer commit
+   primer commit
 
 ### Preparando la subida actualizada de archivos
 Grissel RQ@LAPTOP-L0S870L9 MINGW64 ~/Documents/LabArquitectura/TallerGit (main)
@@ -212,4 +211,34 @@ To https://github.com/Arascely/TallerGit.git
 
 #### Historial completo
 
+ #### Historial completo
+
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
+
+-$ git log
+commit e821c2909846df75f4c60f1510368a828ffc2c69 (HEAD -> main, origin/main, origin/HEAD)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 16:57:43 2026 -0500
+
+   Mejora de todos los documentos
+
+commit dc002a1091baeaffa9c3d419f2fcc0c566fffc23
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 16:52:53 2026 -0500
+
+  Mejora de todos los documentos
+:
+-$ git log
+
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+   Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+   primer commit
 
