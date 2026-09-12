@@ -153,6 +153,152 @@ Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
 Date:   Sat Sep 12 10:10:28 2026 -0500
 
     primer commit
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
 
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
+$ git commit -m "Actualizacion de archivos"
+[main cbe8951] Actualizacion de archivos
+ 2 files changed, 28 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 862 bytes | 862.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Arascely/TallerGit.git
+   71ef38c..cbe8951  main -> main
+
+LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
+$ git log
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+:
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+:
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+:
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+    primer commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+    primer commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+    primer commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit cbe8951c6b8ef16f6fa41f68bcc61035b055926a (HEAD -> main, origin/main)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:59:04 2026 -0500
+
+    Actualizacion de archivos
+
+commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (origin/cv, cv)
+Author: Arascely <grissel.rodriguez.27@unsch.edu.pe>
+Date:   Sat Sep 12 10:10:28 2026 -0500
+
+    primer commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
 
  
