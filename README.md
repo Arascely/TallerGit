@@ -130,7 +130,7 @@ LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
 -$ git log --oneline
 71ef38c (HEAD -> main, origin/main, origin/cv, cv) primer commit
 
-#### Ver historial completo
+#### Ver historial parcial
 LABORATORIO@DESKTOP-KASER4E MINGW64 ~/Documents/TallerLab1/GitTaller (main)
 -$ git log
 commit 71ef38cddc9622feb242e4f1e05c60fd8936165e (HEAD -> main, origin/main, origin/cv, cv)
@@ -186,6 +186,30 @@ Your branch is up to date with 'origin/main'.
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
         modified:   index.html
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+#### Agregar los archivos al staging
+-$ git commit -m "Mejora de todos los documentos"
+[main dc002a1] Mejora de todos los documentos
+ 2 files changed, 119 insertions(+), 178 deletions(-)
+
+#### Subir cambios al repositorio
+
+Grissel RQ@LAPTOP-L0S870L9 MINGW64 ~/Documents/LabArquitectura/TallerGit (main)
+-$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.14 KiB | 1.07 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Arascely/TallerGit.git
+   b611be2..dc002a1  main -> main
+
+#### Historial completo
+
+
